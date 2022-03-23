@@ -1,0 +1,60 @@
+public class Sortierverfahren {
+					
+	public static void main(String[] args) {
+				
+		int [] werte = {10, 55, 23, 18, 5, 99, 22, 33, 1, 38};
+		int zwischen;
+		
+		System.out.println("Sortierung mit dem Bubblesort-Algorythmus");
+		System.out.println();
+		System.out.println("Unsortierte Zahlenreihe:");
+		System.out.println();
+		
+		for(int i=0; i<werte.length; i++) {
+			
+			System.out.print(werte[i] + "   ");
+		}
+		
+		System.out.println();
+		System.out.println();
+		System.out.println("Ergebnis der einzelnen Durchläufe:");
+		System.out.println();
+				
+		for(int i=1; i<werte.length; i++) {
+					
+			for(int j=0; j<werte.length-i; j++) {
+				
+				if(werte[j] > werte[j+1]) {
+					
+					zwischen = werte[j];
+					
+					werte[j] = werte[j+1];
+					werte[j+1] = zwischen;
+				}
+			}
+			
+			for(int z=0; z<werte.length; z++) {
+				
+				System.out.print(werte[z] + "   ");
+				
+			}
+			
+			System.out.println();
+			
+			if(i==werte.length-2) {
+				
+				System.out.println();
+				System.out.println("Sortiert:");
+				System.out.println();
+				
+			}			
+		}
+	}
+}
+		
+		
+		
+		
+
+
+
