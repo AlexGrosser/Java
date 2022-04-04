@@ -20,9 +20,9 @@ public class Passwort {
 		System.out.println("Gib nacheinander die 4 richtigen Zeichen ein");
 		System.out.println();
 		
-		while(Arrays.equals(zeichen, pwort) == false && versuch<3) { //solange zeichenfolge nicht korrekt und versuch<3
+		while(Arrays.equals(zeichen, pwort) == false && versuch<3) {       //solange zeichenfolge nicht korrekt und versuch<3
 			
-			for(int i=0; i<zeichen.length; i++) {		//Schleife für einzele char Eingabe-Positionen
+			for(int i=0; i<zeichen.length; i++) {		//Schleife für einzelne char Eingabe-Positionen
 			
 				System.out.print("Eingabe " + (i+1) +  " : ");
 				
